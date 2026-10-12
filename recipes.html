@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Sofia's Recipes</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<script>
+    function changeImage(image){
+        document.getElementById("mainImage").src=image.src;
+    }
+</script>
+<body>
+
+<header>
+
+    <div class="logo">
+        Sofia's
+        <span>RECIPES</span>
+    </div>
+
+    <nav>
+
+        <a href="index.html">Home</a>
+
+        <a href="desserts.html" class="active">Recipes</a>
+
+        <a href="#">Categories</a>
+
+        <a href="#">About Me</a>
+
+        <a href="#">Contact</a>
+
+    </nav>
+
+    <button class="join-btn">
+        Join the Kitchen ♡
+    </button>
+
+</header>
+
+
+<main class="recipe-page">
+
+
+    <!-- LEFT SIDE -->
+
+    <section class="recipe-image-section">
+
+        <a class="back" href="index.html">
+            ← Back to Desserts
+        </a>
+
+        <img
+            src="images/lava-cake.jpg"
+            class="main-recipe-image"
+            id="mainImage"
+        >
+
+        <div class="small-images">
+
+            <img src="images/lava-cake1.jpeg"
+            onclick="changeImage(this)">
+            <img src="images/lava-cake2.jpeg"
+             onclick="changeImage(this)">
+            <img src="images/lava-cake3.jpeg"
+             onclick="changeImage(this)">
+
+        </div>
+
+    </section>
+
+
+
+    <!-- MIDDLE -->
+
+    <section class="recipe-info">
+
+        <span class="category">
+            Desserts
+        </span>
+
+        <h1>
+            Chocolate Lava Cake ♡
+        </h1>
+
+        <h3>
+            Warm, gooey, and made to melt your heart.
+        </h3>
+
+
+        <div class="details">
+
+            <div>
+                <b>⏱ 30 min</b>
+                <span>Prep Time</span>
+            </div>
+
+            <div>
+                <b>⏱ 12 min</b>
+                <span>Cook Time</span>
+            </div>
+
+            <div>
+                <b>🧁 Easy</b>
+                <span>Difficulty</span>
+            </div>
+
+            <div>
+                <b>☆ 4.9</b>
+                <span>128 reviews</span>
+            </div>
+
+        </div>
+
+
+        <p class="description">
+
+            A decadent chocolate cake with a soft,
+            molten center that flows out with every bite.
+
+            Perfect for special occasions or when
+            you just need a little chocolate hug. ♡
+
+        </p>
+
+
+        <div class="recipe-buttons">
+
+            <button class="purple-btn">
+                🖨 Print Recipe
+            </button>
+
+            <button>
+                Share
+            </button>
+
+            <button>
+                ♡ Save
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- INGREDIENTS -->
+
+    <aside class="ingredients">
+
+        <h2>Ingredients</h2>
+
+        <p>Makes 4 servings</p>
+
+        <label>
+            <input type="checkbox">
+            100g dark chocolate
+        </label>
+
+        <label>
+            <input type="checkbox">
+            100g unsalted butter
+        </label>
+
+        <label>
+            <input type="checkbox">
+            2 large eggs
+        </label>
+
+        <label>
+            <input type="checkbox">
+            2 egg yolks
+        </label>
+
+        <label>
+            <input type="checkbox">
+            50g granulated sugar
+        </label>
+
+        <label>
+            <input type="checkbox">
+            30g flour
+        </label>
+
+        <label>
+            <input type="checkbox">
+            Pinch of salt
+        </label>
+
+        <label>
+            <input type="checkbox">
+            1 tsp vanilla
+        </label>
+
+        <button class="steps-btn">
+            View Full Steps ↓
+        </button>
+
+    </aside>
+
+
+</main>
+
+
+</body>
+</html>
