@@ -1,0 +1,211 @@
+
+<!DOCTYPE html>
+
+
+<html>
+<head>
+
+    
+
+    <title>Sofia's Recipes</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<script>
+    function changeImage(image){
+        document.getElementById("mainImage").src=image.src;
+    }
+</script>
+<body>
+
+<header>
+
+    <div class="logo">
+        Sofia's
+        <span>RECIPES</span>
+    </div>
+
+    <nav>
+
+        <a href="index.html">Home</a>
+
+        <a href="#" class="active">Recipes</a>
+
+        <a href="#">Categories</a>
+
+        <a href="#">About Me</a>
+
+        <a href="#">Contact</a>
+
+    </nav>
+
+    <button class="join-btn">
+        Join the Kitchen ♡
+    </button>
+
+</header>
+
+
+<main class="recipe-page">
+
+
+    <section class="recipe-image-section">
+
+        <a class="back" href="index.html">
+            ← Back to home
+        </a>
+
+        <img
+            src="images/Ceasarsalad.jpeg"
+            class="main-recipe-image"
+            id="mainImage"
+        >
+
+        <div class="small-images">
+
+            <img src="images/Ceasarsalad1.jpeg"
+            onclick="changeImage(this)">
+            
+            
+        </div>
+
+    </section>
+
+    <section class="recipe-info">
+
+        <span class="category">
+            Desserts
+        </span>
+
+        <h1>
+           CEASAR SALAD🥗
+        </h1>
+
+        <h3>
+            Warm, gooey, and made to melt your heart.
+        </h3>
+
+
+        <div class="details">
+
+            <div>
+                <b>⏱ 30 min</b>
+                <span>Prep Time</span>
+            </div>
+
+            <div>
+                <b>⏱ 12 min</b>
+                <span>Cook Time</span>
+            </div>
+
+            <div>
+                <b>Easy</b>
+                <span>Difficulty</span>
+            </div>
+
+            <div>
+                <b>☆ 4.9</b>
+                <span>128 reviews</span>
+            </div>
+
+        </div>
+
+
+        <p class="description">
+
+        A fresh and crunchy Caesar salad made with crisp romaine lettuce,
+         creamy Caesar dressing, golden croutons, and freshly grated Parmesan cheese. 
+         Light, creamy, and packed with flavor.     
+
+        </p>
+
+
+        <div class="recipe-buttons">
+
+            <button class="purple-btn">
+                🖨 Print Recipe
+            </button>
+
+            <button>
+                Share
+            </button>
+
+            <button>
+                ♡ Save
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- INGREDIENTS -->
+
+    <aside class="ingredients">
+
+        <h2>
+            Ingredients
+        </h2>
+
+
+        <p>
+            Makes 8 servings
+        </p>
+
+
+        <label>
+            <input type="checkbox">
+             Romaine lettuce
+        </label>
+
+
+        
+
+
+        <h3>
+           Caesar dressing 
+        </h3>
+
+
+        <label>
+            <input type="checkbox">
+            Parmesan cheese
+        </label>
+
+
+        <label>
+            <input type="checkbox">
+           croutons
+        </label>
+
+
+        <label>
+            <input type="checkbox">
+             lemon juice
+        </label>
+
+
+        <label>
+            <input type="checkbox">
+            black pepper
+        </label>
+
+
+        <label>
+            <input type="checkbox">
+           grilled chicken (optional).
+        </label>
+
+
+    
+    </aside>
+
+
+
+
+</main>
+
+
+</body>
+</html>

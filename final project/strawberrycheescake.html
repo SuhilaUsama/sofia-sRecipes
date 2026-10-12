@@ -1,0 +1,255 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+    
+
+    <title>Sofia's Recipes</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<script>
+    function changeImage(image){
+        document.getElementById("mainImage").src=image.src;
+    }
+</script>
+<body>
+
+<header>
+
+    <div class="logo">
+        Sofia's
+        <span>RECIPES</span>
+    </div>
+
+    <nav>
+
+        <a href="index.html">Home</a>
+
+        <a href="desserts.html" class="active">Recipes</a>
+
+        <a href="#">Categories</a>
+
+        <a href="#">About Me</a>
+
+        <a href="#">Contact</a>
+
+    </nav>
+
+    <button class="join-btn">
+        Join the Kitchen ♡
+    </button>
+
+</header>
+
+
+<main class="recipe-page">
+
+
+    <section class="recipe-image-section">
+
+        <a class="back" href="index.html">
+            ← Back to Desserts
+        </a>
+
+        <img
+            src="images/cheesecake.jpeg"
+            class="main-recipe-image"
+            id="mainImage"
+        >
+
+        <div class="small-images">
+
+            <img src="images/cheesecake1.jpeg"
+            onclick="changeImage(this)">
+            <img src="images/cheesecake2.jpeg"
+             onclick="changeImage(this)">
+            <img src="images/cheesecake3.jpeg"
+             onclick="changeImage(this)">
+
+        </div>
+
+    </section>
+
+    <section class="recipe-info">
+
+        <span class="category">
+            Desserts
+        </span>
+
+        <h1>
+            cheese cake ♡
+        </h1>
+
+        <h3>
+            Warm, gooey, and made to melt your heart.
+        </h3>
+
+
+        <div class="details">
+
+            <div>
+                <b>⏱ 30 min</b>
+                <span>Prep Time</span>
+            </div>
+
+            <div>
+                <b>⏱ 12 min</b>
+                <span>Cook Time</span>
+            </div>
+
+            <div>
+                <b>🧁 Easy</b>
+                <span>Difficulty</span>
+            </div>
+
+            <div>
+                <b>☆ 4.9</b>
+                <span>128 reviews</span>
+            </div>
+
+        </div>
+
+
+        <p class="description">
+
+            A decadent strawberrychese cake with a soft,
+            a soft creemy texture that will melt in your mouth with every bite.
+
+            Perfect for special occasions or when
+            you just need a little sweet strawberry creamy hug. ♡
+
+        </p>
+
+
+        <div class="recipe-buttons">
+
+            <button class="purple-btn">
+                🖨 Print Recipe
+            </button>
+
+            <button>
+                Share
+            </button>
+
+            <button>
+                ♡ Save
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- INGREDIENTS -->
+
+    <aside class="ingredients">
+
+        <h2>
+            Ingredients
+        </h2>
+
+
+        <p>
+            Makes 8 servings
+        </p>
+
+
+        <label>
+            <input type="checkbox">
+            200g digestive biscuits
+        </label>
+
+
+        <label>
+            <input type="checkbox">
+            80g unsalted butter
+        </label>
+
+
+        <h3>
+            For the Filling
+        </h3>
+
+
+        <label>
+            <input type="checkbox">
+            500g cream cheese
+        </label>
+
+
+        <label>
+            <input type="checkbox">
+            ½ cup sugar
+        </label>
+
+
+        <label>
+            <input type="checkbox">
+            1 tsp vanilla
+        </label>
+
+
+        <label>
+            <input type="checkbox">
+            2 eggs
+        </label>
+
+
+        <label>
+            <input type="checkbox">
+            ½ cup heavy cream
+        </label>
+
+
+        <label>
+            <input type="checkbox">
+            1 tbsp flour or cornstarch
+        </label>
+
+
+        <h3>
+            Strawberry Topping
+        </h3>
+
+
+        <label>
+            <input type="checkbox">
+            250–300g fresh strawberries
+        </label>
+
+
+        <label>
+            <input type="checkbox">
+            2 tsp sugar
+        </label>
+
+
+        <label>
+            <input type="checkbox">
+            1 tsp cornstarch
+        </label>
+
+
+        <label>
+            <input type="checkbox">
+            2 tsp water
+        </label>
+
+
+        <button class="steps-btn">
+            View Full Steps ↓
+        </button>
+
+    </aside>
+
+
+
+
+</main>
+
+
+</body>
+</html>

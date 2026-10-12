@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+
+
+<html>
+<head>
+
+    
+
+    <title>Sofia's Recipes</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<script>
+    function changeImage(image){
+        document.getElementById("mainImage").src=image.src;
+    }
+</script>
+<body>
+
+<header>
+
+    <div class="logo">
+        Sofia's
+        <span>RECIPES</span>
+    </div>
+
+    <nav>
+
+        <a href="index.html">Home</a>
+
+        <a href="#" class="active">Recipes</a>
+
+        <a href="#">Categories</a>
+
+        <a href="#">About Me</a>
+
+        <a href="#">Contact</a>
+
+    </nav>
+
+    <button class="join-btn">
+        Join the Kitchen ♡
+    </button>
+
+</header>
+
+
+<main class="recipe-page">
+
+
+    <section class="recipe-image-section">
+
+        <a class="back" href="index.html">
+            ← Back to home
+        </a>
+
+        <img
+            src="images/kongesoup.jpeg"
+            class="main-recipe-image"
+            id="mainImage"
+        >
+
+        <div class="small-images">
+
+            <img src="images/konge2.jpeg"
+            onclick="changeImage(this)">
+            <img src="images/konge1.jpeg"
+             onclick="changeImage(this)">
+            
+        </div>
+
+    </section>
+
+    <section class="recipe-info">
+
+        <span class="category">
+            main-dish
+        </span>
+
+        <h1>
+            CONGEE SOUP🍲
+        </h1>
+
+        <h3>
+            Warm, gooey, and made to melt your heart.
+        </h3>
+
+
+        <div class="details">
+
+            <div>
+                <b>⏱ 30 min</b>
+                <span>Prep Time</span>
+            </div>
+
+            <div>
+                <b>⏱ 12 min</b>
+                <span>Cook Time</span>
+            </div>
+
+            <div>
+                <b>Easy</b>
+                <span>Difficulty</span>
+            </div>
+
+            <div>
+                <b>☆ 4.9</b>
+                <span>128 reviews</span>
+            </div>
+
+        </div>
+
+
+        <p class="description">
+
+             Creamy Chicken Congee
+            A warm and comforting rice porridge, slow-cooked until silky and creamy,
+        topped with tender shredded chicken, fresh green onions, crispy shallots, and aromatic herbs.
+        Simple, cozy, and full of flavor — the perfect bowl for any time of day. 🍲✨
+
+        </p>
+
+
+        <div class="recipe-buttons">
+
+            <button class="purple-btn">
+                🖨 Print Recipe
+            </button>
+
+            <button>
+                Share
+            </button>
+
+            <button>
+                ♡ Save
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- INGREDIENTS -->
+
+    <aside class="ingredients">
+
+        <h2>
+            Ingredients
+        </h2>
+
+
+        <p>
+            Makes 8 servings
+        </p>
+
+
+        <label>
+            <input type="checkbox">
+            1 cup white rice
+        </label>
+
+
+        <label>
+            <input type="checkbox">
+           7 cups chicken broth
+        </label>
+
+
+        
+
+
+        <label>
+            <input type="checkbox">
+            1½ cups cooked shredded chicken
+        </label>
+
+
+        <label>
+            <input type="checkbox">
+           2 cloves garlic, minced
+        </label>
+
+
+        <label>
+            <input type="checkbox">
+            1 tsp fresh ginger, grated
+        </label>
+
+
+        <label>
+            <input type="checkbox">
+            1 tsp sesame oil
+        </label>
+
+
+        <label>
+            <input type="checkbox">
+           Salt & black pepper to taste
+        </label>
+
+
+        <label>
+            <input type="checkbox">
+            Green onions, sliced
+        </label>
+
+
+        
+
+
+        <label>
+            <input type="checkbox">
+            Crispy fried shallots
+        </label>
+
+
+        <label>
+            <input type="checkbox">
+            Fresh cilantro
+        </label>
+
+
+        <label>
+            <input type="checkbox">
+            Chili oil — optional
+        </label>
+
+    </aside>
+
+
+
+
+</main>
+
+
+</body>
+</html>
